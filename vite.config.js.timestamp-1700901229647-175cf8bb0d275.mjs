@@ -1,0 +1,18 @@
+// vite.config.js
+import { defineConfig } from "file:///E:/Arun%20JAK/MernStack%20Project/Real-Estate/client/node_modules/vite/dist/node/index.js";
+import react from "file:///E:/Arun%20JAK/MernStack%20Project/Real-Estate/client/node_modules/@vitejs/plugin-react-swc/index.mjs";
+var vite_config_default = defineConfig({
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:3000",
+        secure: false
+      }
+    }
+  },
+  plugins: [react()]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcuanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJFOlxcXFxBcnVuIEpBS1xcXFxNZXJuU3RhY2sgUHJvamVjdFxcXFxSZWFsLUVzdGF0ZVxcXFxjbGllbnRcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZmlsZW5hbWUgPSBcIkU6XFxcXEFydW4gSkFLXFxcXE1lcm5TdGFjayBQcm9qZWN0XFxcXFJlYWwtRXN0YXRlXFxcXGNsaWVudFxcXFx2aXRlLmNvbmZpZy5qc1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9pbXBvcnRfbWV0YV91cmwgPSBcImZpbGU6Ly8vRTovQXJ1biUyMEpBSy9NZXJuU3RhY2slMjBQcm9qZWN0L1JlYWwtRXN0YXRlL2NsaWVudC92aXRlLmNvbmZpZy5qc1wiO2ltcG9ydCB7IGRlZmluZUNvbmZpZyB9IGZyb20gJ3ZpdGUnXG5pbXBvcnQgcmVhY3QgZnJvbSAnQHZpdGVqcy9wbHVnaW4tcmVhY3Qtc3djJ1xuXG4vLyBodHRwczovL3ZpdGVqcy5kZXYvY29uZmlnL1xuZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHtcbiAgc2VydmVyOntcbiAgICBwcm94eTp7XG4gICAgICAnL2FwaSc6e1xuICAgICAgICAgIHRhcmdldDonaHR0cDovL2xvY2FsaG9zdDozMDAwJyxcbiAgICAgICAgICBzZWN1cmU6ZmFsc2VcbiAgICAgICAgICBcbiAgICAgIH0gICAgfVxuICB9LFxuICBwbHVnaW5zOiBbcmVhY3QoKV0sXG59KVxuIl0sCiAgIm1hcHBpbmdzIjogIjtBQUFnVixTQUFTLG9CQUFvQjtBQUM3VyxPQUFPLFdBQVc7QUFHbEIsSUFBTyxzQkFBUSxhQUFhO0FBQUEsRUFDMUIsUUFBTztBQUFBLElBQ0wsT0FBTTtBQUFBLE1BQ0osUUFBTztBQUFBLFFBQ0gsUUFBTztBQUFBLFFBQ1AsUUFBTztBQUFBLE1BRVg7QUFBQSxJQUFLO0FBQUEsRUFDVDtBQUFBLEVBQ0EsU0FBUyxDQUFDLE1BQU0sQ0FBQztBQUNuQixDQUFDOyIsCiAgIm5hbWVzIjogW10KfQo=
